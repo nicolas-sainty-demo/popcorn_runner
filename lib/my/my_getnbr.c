@@ -18,7 +18,7 @@ int	my_getnbr(char *str)
         i++;
     while (str[i] != '\0') {
         if ((str[i] < '0' || str[i] > '9'))
-	        return (0);
+            return (0);
         j = j + str[i] - 48;
         j = j * 10;
         i++;

@@ -34,7 +34,7 @@ typedef struct game {
     int start;
 } game_t;
 
-typedef struct obstacles {
+typedef struct obs {
     sfSprite ***sprites;
     sfSprite *bouilloire;
     sfSprite *poele;
@@ -42,20 +42,20 @@ typedef struct obstacles {
     int counta;
 } obstacles_t;
 
-typedef struct character {
-    sfSprite *character;
-    sfTexture **character_run;
+typedef struct cha {
+    sfSprite *cha;
+    sfTexture **run;
     int life;
     int time;
     int action;
     int height;
     float speed;
-} character_t;
+} cha_t;
 
 typedef struct super_struct {
     game_t game;
     sfFont *font;
-    obstacles_t obstacles;
-    character_t character;
+    obstacles_t obs;
+    cha_t cha;
 } super_stuct_t;
 #endif /* !MY_STRUCT_H_ */

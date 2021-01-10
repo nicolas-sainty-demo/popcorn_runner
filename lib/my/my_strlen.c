@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2020
 ** my_strlen
 ** File description:
-** find the size of a char*
+** find the size of a char *
 */
 
 int my_strlen(char const *filepath)
@@ -12,5 +12,5 @@ int my_strlen(char const *filepath)
     while (filepath[i] != '\0') {
         i++;
     }
-    return(i);
+    return (i);
 }
