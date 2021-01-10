@@ -59,7 +59,7 @@ int **set_positions(int **obstacles)
     }
     return (obstacles);
 }
-
+/* 
 int **generate_obstacles(int **obstacles)
 {
     int i = 0;
@@ -80,14 +80,14 @@ int **generate_obstacles(int **obstacles)
         printf("%d", obstacles[1][i]);
         i++;
     } */
-    return (obstacles);
-}
+/*     return (obstacles);
+} */
 
-obstacles_t set_obstacles(obstacles_t obstacles)
+/* obstacles_t set_obstacles(obstacles_t obstacles)
 {
-    obstacles.coords = generate_obstacles(obstacles.coords);
+    generate_obstacles(obstacles.coords);
     return (obstacles);
-}
+} */
 
 int main(int argc, char *argv)
 {
@@ -95,8 +95,8 @@ int main(int argc, char *argv)
 
     obstacles_t obstacles;
     super_stuct_t runner;
-    runner.game = set_game(score);
-    runner.obstacles = set_obstacles(obstacles);
-    windows_displayer(1000, 1000, runner);
+/*     runner.game = set_game(score);
+    runner.obstacles = set_obstacles(obstacles); */
+    windows_displayer(1920, 1080, &runner);
     return (0);
 }

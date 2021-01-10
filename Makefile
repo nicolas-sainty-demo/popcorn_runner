@@ -9,7 +9,7 @@ all: comp clean
 
 comp:
 	cd lib/my && make && cd ../../
-	gcc -o popcorn src/*.c -L./lib/my -lmy -lcsfml-graphics -lcsfml-system -lcsfml-window -lm
+	gcc -g -o popcorn src/*.c -L./lib/my -lmy -lcsfml-graphics -lcsfml-system -lcsfml-window -lcsfml-audio -lm
 
 clean:
 	rm -f src/*.o
